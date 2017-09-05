@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: 'PT Serif', serif;
+}
+
+body {
+  background: #fff url("8-fon-dlya-sayta-min.png");
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+  z-index: 1;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 50px auto;
+}
+
+.plus, .minus {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  color: #3E8A00;
+}
+
+.minus {
+  color: #DE2727;
+}
+
+.plus li::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+}
+
+.minus li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+}
+
+.class {
+  float: left;
+  width: 290px;
+  min-height: 100px;
+  padding: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px; 
+  border: 2px dashed #320631;
+  border-radius: 10px;
+}
+
+.class:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.class h3 {
+  margin-top: 0;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  min-height: 30px;
+  border-radius: 10px;
+  background: #72AC03;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.2s;
+}
+
+a:hover {
+  background: #619400;
+}
